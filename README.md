@@ -15,9 +15,9 @@ binary [OPTIONS -pn] [FILE]
 Options:
 
   -p : **p**lain text output. The interpreter output won't contain bold characters.
-  
+ 
   -n : **n**o output. The interpreter will not output the content of the used cells at each instruction run.
-  
+ 
 Both *options* and *file* can be omitted.
 
 If options are omitted the interpreter will run outputting the content of the used cells for each instruction run. The current evaluated cell will be written in bold.
