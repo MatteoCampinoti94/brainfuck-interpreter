@@ -33,7 +33,7 @@ The following extra symbols are also recognized:
 
 ! # Consider the rest of the line as comment, do not parse
 
-\   Consider the next character as comment
+ \  Consider the next character as comment
 
-@   End parsing here
+ @  End parsing here
 
