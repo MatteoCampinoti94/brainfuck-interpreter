@@ -6,7 +6,7 @@ Only requirements to compile the program are a C++11 compiler and Linux system.
 `g++ std=c++11 main.cpp parser.cpp interpreter.cpp functions.cpp`
 
 **USAGE**
-<binary> [OPTIONS -pn] [FILE]
+binary [OPTIONS -pn] [FILE]
 
 Options:
   -p : **p**lain text output. The interpreter output won't contain bold characters.
