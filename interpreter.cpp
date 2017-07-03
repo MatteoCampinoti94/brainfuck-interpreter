@@ -35,6 +35,8 @@ void interpreter (std::vector<char>& inst, bool o, bool p)
 
       case '.' : print(tape[t], out, o); break;
       case ',' : esc=input(tape[t], in, o); break;
+        
+      case '@' : esc=true; break;
     }
 
     i++;
