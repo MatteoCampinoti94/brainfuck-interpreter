@@ -27,7 +27,7 @@ bool parser_file (std::ifstream& ifile, std::vector<char>& inst)
 
       case '\\' : ifile.get(c); break;
 
-      case '@' : ifile.close(); break;
+      case '@' : inst.push_back(c); break;
     }
   }
 
@@ -55,6 +55,8 @@ bool parser_string(std::string& input, std::vector<char>& inst)
 
       case ',' :
       case '.' : inst.push_back(c); break;
+      
+      case '@' : inst.push_back(c); break;
     }
   }
 
