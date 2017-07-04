@@ -17,7 +17,7 @@ bool esc=false;
 void interpreter (std::vector<char>& inst, bool o, bool p)
 {
   if (o) { output(tape, t, t_max, s, ins, p); }
-  else { printf("Output: "); }
+  else { printf("=> "); }
 
   while(!esc && i<inst.size())
   {
@@ -35,7 +35,7 @@ void interpreter (std::vector<char>& inst, bool o, bool p)
 
       case '.' : print(tape[t], out, o); break;
       case ',' : esc=input(tape[t], in, o); break;
-        
+
       case '@' : esc=true; break;
     }
 

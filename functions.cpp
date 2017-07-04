@@ -47,14 +47,15 @@ bool input (unsigned char& cell, std::string& in, bool& o)
 {
   if (in.length()==0)
   {
-    if (!o) { printf("\n"); }
+    if (!o) { printf("\n<= "); }
+    else { printf("Input: "); }
 
-    printf("Input : "); getline(std::cin, in);
+    getline(std::cin, in);
 
     if (in=="!@") { return true; }
     else if (in=="\\!@") { in="!@"; }
 
-    if (!o) { printf("Output: "); }
+    if (!o) { printf("=> "); }
   }
 
   cell=s_pop(in);
