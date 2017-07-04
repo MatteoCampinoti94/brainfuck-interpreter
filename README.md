@@ -1,13 +1,13 @@
 # brainfuck-interpreter
-*Small brainfuck interpreter written in C++*
+Small brainfuck interpreter written in C++
 
 
-**COMPILING**
+##COMPILING
 Only requirements to compile the program are a C++11 compiler and Linux system.
 `g++ std=c++11 main.cpp parser.cpp interpreter.cpp functions.cpp`
 
 
-**USAGE**
+##USAGE
 binary [OPTIONS -pn] [FILE]
 
 Options:
@@ -21,7 +21,7 @@ If options are omitted the interpreter will run outputting the content of the us
 If the file is omitted the interpreter will ask the user to input the code directly.
 
 
-**CODE**
+##CODE
 The interpreter follows brainfuck original standard.
 | Symbol | Instruction |
 |:---:|:---|
