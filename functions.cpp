@@ -49,7 +49,7 @@ bool input (unsigned char& cell, std::string& in, bool& o)
   {
     if (!o) { printf("\n"); }
 
-    printf("Input: "); getline(std::cin, in);
+    printf("Input : "); getline(std::cin, in);
 
     if (in=="!@") { return true; }
     else if (in=="\\!@") { in="!@"; }
