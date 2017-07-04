@@ -48,15 +48,12 @@ int main(int argc, char* argv[])
   {
     options_parse(argv[1], options);
 
-    if (argc>2)
+    if (check_file(argv[2]))
     {
-      if (check_file(argv[2]))
-      {
-        std::ifstream ifile(argv[2]);
-        if (!parser_file(ifile, inst)) { printf ("Loop brackets don't match\n"); exit(3); }
-      }
-      else { printf("File does not exist\n"); exit(1); }
+      std::ifstream ifile(argv[2]);
+      if (!parser_file(ifile, inst)) { printf ("Loop brackets don't match\n"); exit(3); }
     }
+    else { printf("File does not exist\n"); exit(1); }
   }
 
   interpreter(inst, options.out, options.plain);
