@@ -53,7 +53,10 @@ bool input (unsigned char& cell, std::string& in, bool& o)
     getline(std::cin, in);
 
     if (in=="!@") { return true; }
-    else if (in=="\\!@") { in="!@"; }
+    else if (in[0]=='\\' && in.length()>=3)
+    {
+      if (in[in.length()-2]=='!' && in[in.length()-1]=='@') { s_pop(in); }
+    }
 
     if (!o) { printf("=> "); }
   }
