@@ -16,11 +16,11 @@ Options:
 
 Both *options* and *file* can be omitted.
 
-If options are omitted the interpreter will run outputting the content of the used cells for each instruction run. The current evaluated cell will be written in bold.
+If options are omitted the interpreter will run outputting the content of the used cells for each instruction run. The current evaluated cell will be written in bold. If the current instruction is a print `.` then the output will be showed beside the cells. Only ASCII values from 33 to 255 (127 DEL excluded) will be shown as characters, the others will be shown with their integer value.
 
 If the file is omitted the interpreter will ask the user to input the code directly. In this mode the only recognized instructions are brainfuck standards and `@`
 
-To stop the program at input (for example in cat programs `,[.,]`) the user can type `!@`. If need to input `!@` the user can type `\!@`.
+To stop the program at input (for example in cat programs `,[.,]`) the user can type `!@`. If need to input `!@` the user can type `\!@` and keep adding `\` to consider them as input (e.g. `\\\\!@` will output `\\\!@`)
 
 
 ## CODE
