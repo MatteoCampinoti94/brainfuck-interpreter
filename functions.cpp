@@ -72,7 +72,7 @@ void output (std::vector<unsigned char>& tape, int& t, int& t_max, unsigned& s, 
   for (int p=0; p<=t_max; p++)
   {
     if (p==t && !plain) { printf ("\033[1m%u:%u\033\[0m ", p, tape[p]); }
-    if (p==t && plain) { printf (">%u:%u< ", p, tape[p]); }
+    else if (p==t && plain) { printf (">%u:%u< ", p, tape[p]); }
     else { printf ("%u:%u ", p, tape[p]); }
   }
   if (ins=='.')
