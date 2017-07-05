@@ -31,5 +31,6 @@
 *.out
 *.app
 
-# Extra
-compiling_errors.txt
+# Vim
+.*.swp
+*~
